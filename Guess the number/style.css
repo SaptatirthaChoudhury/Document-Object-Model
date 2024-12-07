@@ -1,86 +1,98 @@
 /* styles.css */
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
-    color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
 }
 
 #wrapper {
-    text-align: center;
-    background: #2c3e50;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+  text-align: center;
+  background: #2c3e50;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #ecf0f1;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ecf0f1;
 }
 
 p {
-    margin: 10px 0;
-    font-size: 16px;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
 .form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .guessField {
-    width: calc(100% - 22px);
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  width: calc(100% - 22px);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .guessSubmit {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #27ae60;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .guessSubmit:hover {
-    background-color: #2ecc71;
+  background-color: #2ecc71;
 }
 
 .resultParas {
-    margin-top: 20px;
-    text-align: left;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .resultParas p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .lowOrHi {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+/* For custom button by DOM */
+
+.custom-button {
+  background-color: grey;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
