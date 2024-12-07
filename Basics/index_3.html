@@ -2,47 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chai aur code | DOM</title>
 </head>
 
-<body style="background-color: rgb(53, 47, 47); color:rgb(242, 242, 243)">
-
+<body style="background-color: rgb(53, 47, 47); color: rgb(242, 242, 243)">
     <ul class="language">
         <li>JavaScript</li>
     </ul>
-
 </body>
 <script>
     function addLanguage(langName) {
-        const li = document.createElement('li')
-        li.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(li)
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector(".language").appendChild(li);
     }
-    addLanguage("Typescript")
+    addLanguage("Typescript");
     //  addLanguage("Python")
-    addLanguage("Golang")
-
+    addLanguage("Golang");
     function addLanguageOptimized(langName) {
-        const li = document.createElement('li')
-        li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild(li)
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector(".language").appendChild(li);
     }
 
-    addLanguageOptimized("Python")
+    addLanguageOptimized("Python");
 
-    //Edit
-    const secondLang = document.querySelector("li:nth-child(2)")
+    //Edit 1
+    const secondLang = document.querySelector("li:nth-child(2)");
     //  secondLang.innerHTML = "Mojo"
+    const newli = document.createElement("li");
+    newli.textContent = "Vyper";
+    secondLang.replaceWith(newli);
 
-    const newli = document.createElement('li')
-    newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    // Edit 2
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>Solidity</li>'
 
     //remove
-    const lastLang = document.querySelector('li:last-child')
-    lastLang.remove()
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
 </script>
 
 </html>
